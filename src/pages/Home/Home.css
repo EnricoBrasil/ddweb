@@ -1,0 +1,73 @@
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top:4%;
+    color: #ffffff;
+    font-family: sans-serif;
+}
+
+.container .iconeForm{
+    display: flex;
+    justify-content: center;
+}
+
+.container .iconeForm .iconAvatar{
+    width: 100px;
+    height: 100px;
+}
+
+
+.container form{
+    background-color: #1A6FAB;
+    padding: 1% 4% 4% 4%;
+    border-radius: 8px;
+    border: #606060 2px solid;
+}
+
+
+.container .inputForm{
+    margin-top: 10px;
+}
+
+.container .inputForm input{
+    padding: 4%;
+    width: 90%;
+    border-radius: 10px;
+    border: 0.5px solid black;
+    margin-top: 10px;
+}
+
+.container .forgotPassword{
+    margin-top: 12px;
+    margin-left: 6px;
+}
+
+.container .forgotPassword a,
+.container .createAccount a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.container .btnSubmit{
+    margin: 0 auto;
+    margin-top:16px;
+    width: 80%;
+}
+
+.container .btnSubmit button{
+    border-radius: 10px;
+    padding: 4%;
+    width: 100%;
+    cursor: pointer;
+    font-size: large;
+    border: 0.5px solid grey;
+    background-color: #f3f3f3;
+}
+.container .btnSubmit button:hover{
+    background-color: #ffffff;
+}
+
+.container .forgotPassword a:hover,
+.container .createAccount a:hover{
+    text-decoration: underline;
+}
