@@ -10,19 +10,26 @@ const db = mysql.createConnection({
     host: "localhost",
     user: "root", 
     password: "",
-    database: "login"
+    database: "signup"
 })
 
-app.post('/', (req, res) => {
-    const sql = "SELECT * FROM usuarios WHERE email = ? AND senha = ?";
-
-    db.query(sql, [req.body.email, req.body.senha], (err, data) => {
-        if(err) return res.json("Erro");
-        if(data.length > 0) {
-            return res.json("Login feito com sucesso");
-        } else {
-            return res.json("Não encontrado");
-        }
+app.post('/registrar', (req, res) => {
+    const sql = "INSERT INTO login (`nome`,`email`,`senha`) VALUES (?)";
+    const values = [
+        req.body.nome,
+        req.body.email,
+        req.body.senha
+    ]
+    db.query(sql, [values], (err, data) => {
+        if(err){
+            return res.json("Erro");
+        } 
+        return res.json(data);
+        // if(data.length > 0) {
+        //     return res.json("Login feito com sucesso");
+        // } else {
+        //     return res.json("Não encontrado");
+        // }
     })
 })
 

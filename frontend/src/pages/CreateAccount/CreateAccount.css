@@ -46,3 +46,8 @@
 .container .btnSubmitCA button:hover{
     background-color: #ffffff;
 }
+
+.container .textError{
+    color: red;
+    margin-left: 2%;
+}

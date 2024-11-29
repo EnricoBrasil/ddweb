@@ -71,3 +71,8 @@
 .container .createAccount a:hover{
     text-decoration: underline;
 }
+
+.container .textError{
+    color: red;
+    margin-left: 2%;
+}
