@@ -1,48 +1,25 @@
 import './Home.css'
 import HeaderLogin from '../../components/HeaderLogin/HeaderLogin';
 import { IoPersonCircleOutline } from "react-icons/io5";
-import { useState } from 'react';
-// import axios from 'axios';
-import Validation from '../../services/LoginValidation';
 
 
 function Home() {
-    const [values, setValues] = useState({
-      email:'',
-      senha: ''
-    });
-    const [errors, setErrors] = useState({})
-    const handleInput = (event) => {
-      setValues(prev => ({...prev, [event.target.name]: [event.target.value]}))
-    }
-    const handleSubmit = (event) => {
-      event.preventDefault();
-      setErrors(Validation(values));
-
-      // axios.post('http://localhost:8081/', {email, senha})
-      // .then(res => console.log(res))
-      // .catch(err => console.log(err));
-
-    }
+    
   return (
   <>
     <HeaderLogin/>
       <div className='container'>
-        <form onSubmit={handleSubmit}>
+        <form>
             <div className='iconeForm'>
             <IoPersonCircleOutline className='iconAvatar'/>
             </div>
 
             <div className='inputForm'>
-                <input type="email" placeholder='Email' name='email'
-                onChange={handleInput} />
-                {errors.email && <span className='textError'> {errors.email}</span>}
+                <input type="email" placeholder='Email' name='email'/>
             </div>
 
             <div className='inputForm'>
-                <input type="password" placeholder='Senha' name='senha'
-                onChange={handleInput} />
-                {errors.senha && <span className='textError'> {errors.senha}</span>}
+                <input type="password" placeholder='Senha' name='senha'/>
             </div>
 
             <div className='forgotPassword'>
