@@ -21,10 +21,6 @@ function Home() {
                 <input type="password" placeholder='Senha'/>
             </div>
 
-            <div className='forgotPassword'>
-                <a href="esqueciSenha">Esqueceu a senha?</a>
-            </div>
-
             <div className='btnSubmit'>
             <button><a href="/menuprincipal">Enviar</a></button>
             </div>
