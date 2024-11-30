@@ -26,7 +26,7 @@ function Home() {
             </div>
 
             <div className='btnSubmit'>
-            <button>Enviar</button>
+            <button><a href="/menuprincipal">Enviar</a></button>
             </div>
 
             <div className='createAccount'>
