@@ -2,3 +2,12 @@
     display: flex;
     justify-content: center;
 }
+
+.containerMP .listaVideos{
+    
+}
+
+.containerMP .listaVideos .videos{
+    padding: 20px;
+    list-style: none;
+}

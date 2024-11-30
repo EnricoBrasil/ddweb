@@ -5,8 +5,15 @@ function MenuPrincipal() {
 
   return (
   <div className='containerMP'>
-  <AsideBar/>
-    <h1>menu principal</h1>
+    <AsideBar/>
+    <div className='logica'>
+        <h1>Logica de programação</h1>
+        <ul className='listaVideos'>
+            <li className='videos'>Video 1</li>
+            <li className='videos'>Video 2</li>
+            <li className='videos'>Video 3</li>
+        </ul>
+    </div>
   </div>
   )
 }
